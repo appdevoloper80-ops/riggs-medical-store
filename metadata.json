@@ -1,0 +1,8 @@
+{
+  "name": "Riggs Medical Supply Store",
+  "description": "24-hour medical supplies and home healthcare delivery in Central London on Museum Street.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

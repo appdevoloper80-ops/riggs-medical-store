@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riggs Medical Supply Store | 24-Hour Medical Supplies in Central London</title>
+    <meta name="description" content="24-hour medical supplies and home healthcare delivery in Central London on Museum Street." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://riggsmedicalsupply.co.uk" />
+    <meta property="og:title" content="Riggs Medical Supply Store | 24-Hour Medical Supplies in Central London" />
+    <meta property="og:description" content="24-hour medical supplies and home healthcare delivery in Central London on Museum Street." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Riggs Medical Supply Store | 24-Hour Medical Supplies in Central London" />
+    <meta name="twitter:description" content="24-hour medical supplies and home healthcare delivery in Central London on Museum Street." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) for LocalBusiness / MedicalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Riggs Medical Supply Store",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+      "telephone": "+44 1730 298007",
+      "url": "https://riggsmedicalsupply.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "21 Museum St",
+        "addressLocality": "London",
+        "postalCode": "WC1A 1JN",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.5186,
+        "longitude": -0.1256
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Contactless",
+      "currenciesAccepted": "GBP",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Medical Supplies & Delivery",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "London Medical Supply Delivery",
+              "description": "Direct delivery of essential medical and mobility supplies across London."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#FFFFFF] text-[#1C2B3A] antialiased selection:bg-[#0FA3A3]/20 selection:text-[#0B2545]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

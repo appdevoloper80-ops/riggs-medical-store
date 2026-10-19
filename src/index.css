@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0B2545;
+  --teal: #0FA3A3;
+  --teal-deep: #0A7C7C;
+  --mint: #E6F6F4;
+  --sky: #EAF3FB;
+  --coral: #FF6B5E;
+  --white: #FFFFFF;
+  --ink: #1C2B3A;
+  --grey: #5B6B7B;
+}
+
+/* Accessibility: Text Scaling */
+html.text-size-normal {
+  font-size: 17px;
+}
+html.text-size-large {
+  font-size: 19px;
+}
+html.text-size-xlarge {
+  font-size: 21px;
+}
+
+/* Accessibility: High Contrast Mode */
+html.high-contrast {
+  --navy: #000000;
+  --teal: #006666;
+  --teal-deep: #004444;
+  --mint: #F0FAF8;
+  --sky: #E2EEF8;
+  --coral: #C71F10;
+  --ink: #000000;
+  --grey: #263238;
+}
+
+html.high-contrast body {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+html.high-contrast * {
+  border-color: #000000 !important;
+}
+
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  scroll-behavior: smooth;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #1C2B3A;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Focus visibility for accessibility */
+*:focus-visible {
+  outline: 3px solid #0FA3A3;
+  outline-offset: 3px;
+}
+
+/* Soft medical cross pattern */
+.bg-medical-cross-pattern {
+  background-image: radial-gradient(circle, #0FA3A3 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-medical-cross-grid {
+  background-image: 
+    linear-gradient(to right, rgba(15, 163, 163, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 163, 163, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Subtle pulse animation for live open badge */
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
